@@ -5,10 +5,10 @@ export const TotalGraph = ({ graphCode }) => {
 
   const arr = graphCode.timeline ? [...graphCode.timeline] : [];
 
-  const recovered = arr.map(rec => rec.recovered);
-  const deaths = arr.map(det => det.deaths);
-  const active = arr.map(act => act.active);
-  const date = arr.map(date => date.date);
+  const recovered = arr.map(res => res.recovered);
+  const deaths = arr.map(res => res.deaths);
+  const active = arr.map(res => res.active);
+  const date = arr.map(res => res.date);
 
   const series = [{
     name: 'recovered',
