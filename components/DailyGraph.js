@@ -7,10 +7,10 @@ export const DailyGraph = ({ graphCode }) => {
   console.log(graphCode)
   const arr = graphCode.timeline ? [...graphCode.timeline] : [];
 
-  const recovered = arr.map(rec => rec.new_recovered);
-  const deaths = arr.map(det => det.new_deaths);
-  const confirmed = arr.map(act => act.new_confirmed);
-  const date = arr.map(date => date.date);
+const recovered = arr.map(res => res.new_recovered);
+  const deaths = arr.map(res => res.new_deaths);
+  const confirmed = arr.map(res => res.new_confirmed);
+  const date = arr.map(res => res.date);
 
   const series = [{
     name: 'new recovered',
